@@ -1,0 +1,1 @@
+# crypto_currency_trading_bot_simulator_windows
