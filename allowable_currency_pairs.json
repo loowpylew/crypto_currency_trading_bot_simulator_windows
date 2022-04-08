@@ -1,0 +1,35 @@
+{
+   "USD": ["ZRX", "1INCH", "AAVE", "GHST","ACA", "AKT", "ALGO",	"AIR", "ANKR", "ANT", "ASTR", "AVAX", "AXS", "BADGER", "BNT", "BAL", "BAND",		 	 	 	 	 
+           "BAT", "BNC","BCH", "FIDA", "ADA", "CTSI", "LINK", "CHZ", "COMP","ATOM", "CQT", "CRV", "DAI", "DASH", "MANA", "DYDX", "EWT", "ENJ",
+           "EOS", "FIL", "FLOW", "GNO", "ICX", "INJ", "KAR", "KAVA", "KEEP", "KILT", "KIN", "KINT", "KSM", "KNC", "LSK", "LPT", "LRC",		 	 	 	 	 
+           "MNGO", "MKR", "MINA", "MIR", "GLMR", "MOVR", "NANO", "OCEAN", "OMG", "ORCA", "OXT", "OGN", "OXY", "PAXG", "PERP", "PHA", "DOT", "MATIC", "QTUM",		 	 	 	 	 
+           "RARI", "RAY", "REN", "SBR", "SRM", "SHIB", "SDN", "SC", "SOL", "ATLAS", "POLIS", "STEP", "STORJ", "SUSHI", "SNX", "TBTC", "LUNA", "UST",		 	 	 	 	 
+           "USDT", "GRT", "SAND", "TRX", "UNI", "USDC",	"WBTC",	"YFI"],
+   
+   "EUR": ["ZRX", "1INCH", "AAVE", "GHST","ACA", "AKT", "ALGO",	"AIR", "ANKR", "ANT", "ASTR", "AVAX", "AXS", "BADGER", "BNT", "BAL", "BAND",		 	 	 	 	 
+           "BAT", "BNC", "BCH", "FIDA", "ADA", "CTSI", "LINK", "CHZ", "COMP","ATOM", "CQT", "CRV", "DAI", "DASH", "MANA", "DYDX", "EWT", "ENJ", 
+           "EOS", "FIL", "FLOW", "GNO", "ICX",	"INJ", "KAR", "KAVA", "KEEP", "KILT", "KIN", "KINT", "KSM",	"KNC", "LSK", "LPT", "LRC",		 	 	 	 	 
+           "MNGO", "MKR", "MINA", "MIR", "GLMR", "MOVR", "NANO", "OCEAN", "OMG", "ORCA", "OXT", "OGN", "OXY", "PAXG", "PERP", "PHA", "DOT", "MATIC", "QTUM",		 	 	 	 	 
+           "RARI", "RAY", "REN", "XRP", "SBR", "SRM", "SHIB", "SDN", "SC", "SOL", "ATLAS", "POLIS", "STEP", "STORJ", "SUSHI", "SNX", "TBTC", "LUNA", "UST",		 	 	 	 	 
+           "USDT", "GRT", "SAND", "TRX", "UNI", "USDC", "WBTC", "YFI"],
+
+   "CAD": ["BTC", "XRP", "USDT"],	
+
+   "JPY": ["BTC", "BCH", "XRP", "USDT"], 
+
+   "GBP": ["ZRX", "AAVE", "GHST", "ALGO", "ANKR", "BNT", "BTC", "BCH", "ADA", "LINK", "ATOM", "EWT", "ENJ", "ETH", "FIL", "FLOW", "KSM", "LPT", "MKR", "MINA",
+           "OCEAN", "DOT", "MATIC", "RARI", "REN", "XRP", "SRM", "SOL", "SUSHI", "SNX", "USDT", "GRT", "SAND", "USDC","YFI"],
+   
+   "CHF": ["USDT"],
+
+   "AUD": ["AAVE", "BCH", "ADA", "LINK", "ATOM", "FIL", "KSM", "DOT", "XRP", "XLM", "SNX", "USDT", "GRT", "USDC", "YFI"], 	
+
+   "ZUSD": ["XREP", "XREPV2", "XXBT", "XXDG", "XMLN", "XETH", "XETC", "XLTC", "XXMR", "XXRP", "XXLM", "XXTZ", "WAVE", "XZEC"],
+   "ZEUR": ["XREP", "XREPV2", "XXBT", "XXDG", "XMLN",  "XETH", "XETC", "XLTC", "XXMR", "XXRP", "XXLM", "XXTZ", "WAVE", "XZEC"], 
+   "ZCAD": ["XXBT", "XETH", "XXRP"], 
+   "ZJPY": ["XXBT", "XETH", "XLTC", "XXRP"], 
+   "ZGBP": ["XXBT", "XETH", "XLTC", "XXRP", "XXLM", "XXTZ"], 
+   "ZCHF": ["XXBT", "XETH"], 
+   "ZAUD": ["ZZBT", "XETH", "XLTC", "XXRP", "XXLM", "XXTZ"]
+
+}

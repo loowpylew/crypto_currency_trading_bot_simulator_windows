@@ -1,0 +1,22 @@
+{
+    "error": [],
+    "result": {
+        "trades": {
+            "DEPOSIT-REQUEST[1]": {
+                "ordertxid": "OQCLML-BW3P3-BUCMWZ",
+                "postxid": "TKH2SE-M7IF5-CFI7LT",
+                "pair": "",
+                "time": "",
+                "type": "",
+                "ordertype": "",
+                "price": "",
+                "cost": "",
+                "fee": "0.00000",
+                "vol": "",
+                "margin": "0.00000",
+                "misc": ""
+            }
+        },
+        "count": 1
+    }
+}
