@@ -340,7 +340,10 @@ class FrontEnd:
         if choice == "3":
             sr.clearConsole()
             print(f"{c.bcolors.HACKER_GREEN}If you're sure you want to continue enter {c.bcolors.ENDC}'y'{c.bcolors.HACKER_GREEN}, otherwise, enter {c.bcolors.ENDC}'n'{c.bcolors.HACKER_GREEN}: {c.bcolors.ENDC}")
+            val = ""
             while(1):
+                if val == 'exit': 
+                    break
                 val = input()
                 if val == 'y': 
                     print(f"{c.bcolors.HACKER_GREEN}Input new crypto curreny amount [{c.bcolors.ENDC}{FrontEnd.arrayify_pair[0]}{c.bcolors.HACKER_GREEN}]: {c.bcolors.ENDC}", end='')
@@ -364,7 +367,7 @@ class FrontEnd:
                          try: 
                              to_float = float(val)
                              if to_float < 0:
-                                 print(f"{c.bcolors.WARNING}Please enter a number greater than 0:{c.bcolors.ENDC}")
+                                 print(f"{c.bcolors.WARNING}Please enter a number greater than 0: {c.bcolors.ENDC}", end='')
                              else:
                                  real_tender_amount = to_float
                                  old_real_tender_amount = FrontEnd.real_tender_amount
@@ -377,6 +380,7 @@ class FrontEnd:
                    
                                  with open('balance.json', 'w') as f:
                                      json.dump(balance, f, indent = 4) # Writes new balance to file
+                                 val = "exit"
                                  break 
                          except ValueError:
                              print(f"{c.bcolors.WARNING}Please enter a number: {c.bcolors.ENDC}", end='')
@@ -392,7 +396,7 @@ class FrontEnd:
            
             sr.clearConsole()
 
-        # Mannipulate 'STOP LOSS' value"
+        # Manipulate 'STOP LOSS' value"
         if choice == "4": 
             sr.clearConsole()
             print(f"\n{c.bcolors.HACKER_GREEN}Current STOP_LOSS value:{c.bcolors.ENDC} {FrontEnd.STOP_LOSS}")
@@ -603,6 +607,7 @@ class FrontEnd:
                     with open('system_restart_flag.json', 'w') as f: 
                         json.dump(sys_restart_flag, f, indent = 4)
                     
+                    break     
                 elif val == 'n':
                     sr.clearConsole()
                     break
@@ -611,6 +616,7 @@ class FrontEnd:
 
         # End trading simulation
         if choice == "9": 
+            sr.clearConsole()
             print(f"{c.bcolors.HACKER_GREEN}If you're sure you want to end the trading simulator")
             print(f"{c.bcolors.HACKER_GREEN}enter {c.bcolors.ENDC}'y'{c.bcolors.HACKER_GREEN}, otherwise, enter {c.bcolors.ENDC}'n'{c.bcolors.HACKER_GREEN}:{c.bcolors.ENDC} ")
             while(1):

@@ -1,10 +1,7 @@
-import statistics
 import pandas as pd
 import matplotlib.pyplot as plt
-import time 
 import numpy as np 
 import pandas as pd 
-import pandas_datareader.data as web
 import talib
 from sklearn.preprocessing import StandardScaler
 from sklearn import svm
@@ -365,6 +362,16 @@ def graph_representations_of_indicators(data, time_in_seconds):
     plt.savefig('graphical_representations/High_VS_Low_in_relation_to_Close.png')
     plt.close() # Reduce the number of plts opened. Reduce memory usage (kbytes)
 
+    # Open vs Close
+    open_, close_.plot(figsize=(10,6))
+    plt.grid(True)
+    plt.title("Open price vs Closing price")
+    plt.axis('tight')
+    plt.xlabel('no. of data point (60 closing prices per hour)')
+    plt.ylabel('Price')
+    plt.savefig('graphical_representations/Open_vs_Close.png')
+    plt.close() # Reduce the number of plts opened. Reduce memory usage (kbytes)
+
     # High - Low in relation to Close
     dataset['H-L'].plot(figsize=(10,6))
     plt.grid(True)
@@ -375,6 +382,26 @@ def graph_representations_of_indicators(data, time_in_seconds):
     plt.savefig('graphical_representations/High-Low_in_relation_to_Close.png')
     plt.close() # Reduce the number of plts opened. Reduce memory usage (kbytes)
 
+    # Open - Close in relation to Close
+    dataset[['O-C']].plot(figsize=(10,6))
+    plt.grid(True)
+    plt.title("Open Price vs Close Price")
+    plt.axis('tight')
+    plt.xlabel('no. of data point (60 closing prices per hour)')
+    plt.ylabel('Price')
+    plt.savefig('graphical_representations/Open-Close_in_relation_to_Close.png')
+    plt.close() # Reduce the number of plts opened. Reduce memory usage (kbytes)
+
+    # OHLC all in one graph 
+    open_, high_, low_, close_.plot(figsize=(10,6))
+    plt.grid(True)
+    plt.title("OHLC")
+    plt.axis('tight')
+    plt.xlabel('no. of data point (60 closing prices per hour)')
+    plt.ylabel('Price')
+    plt.savefig('graphical_representations/OHLC.png')
+    plt.close() # Reduce the number of plts opened. Reduce memory usage (kbytes)
+
     # Moving Average 
     dataset['ma'].plot(figsize=(10,6))
     plt.grid(True)
@@ -383,6 +410,16 @@ def graph_representations_of_indicators(data, time_in_seconds):
     plt.xlabel('no. of data point (60 closing prices per hour)')
     plt.ylabel('Price')
     plt.savefig('graphical_representations/ma.png')
+    plt.close() # Reduce the number of plts opened. Reduce memory usage (kbytes)
+
+    # Standard Deviation
+    dataset['std'].plot(figsize=(10,6))
+    plt.grid(True)
+    plt.title("Standard deviation")
+    plt.axis('tight')
+    plt.xlabel('no. of data point (60 closing prices per hour)')
+    plt.ylabel('Price')
+    plt.savefig('graphical_representations/std.png')
     plt.close() # Reduce the number of plts opened. Reduce memory usage (kbytes)
 
     # Expodential weighted moving average 
@@ -466,4 +503,15 @@ def graph_representations_of_indicators(data, time_in_seconds):
     plt.xlabel('no. of data point (60 closing prices per hour)')
     plt.ylabel('Price')
     plt.savefig('graphical_representations/Bollinger_Bands.png')
+    plt.close() # Reduce the number of plts opened. Reduce memory usage (kbytes)
+
+    # All indicators in one graph 
+    open_, high_, low_, close_.plot(figsize=(10,6))
+    dataset[['H-L', 'O-C', 'ma', 'EWMA_12', 'std', 'RSI', 'SAR', 'ADX', 'Williams %R', 'Price_Rise', 'Upperbound', 'Lowerbound', ]].plot()
+    plt.grid(True)
+    plt.title("All indicators in one")
+    plt.axis('tight')
+    plt.xlabel('no. of data point (60 closing prices per hour)')
+    plt.ylabel('Price')
+    plt.savefig('graphical_representations/All_indicators.png')
     plt.close() # Reduce the number of plts opened. Reduce memory usage (kbytes)
