@@ -259,7 +259,7 @@ class FrontEnd:
         print(f"{c.bcolors.ENDC}8. {c.bcolors.HACKER_GREEN}Restart trading simulation")
         print(f"{c.bcolors.ENDC}9. {c.bcolors.HACKER_GREEN}End trading simulation")
         print(f"{c.bcolors.ENDC}10. {c.bcolors.HACKER_GREEN}Help menu")
-        print(f"{c.bcolors.WARNING}Enter value betwen {c.bcolors.ENDC}1 - 11 {c.bcolors.WARNING}accordingly:{c.bcolors.ENDC}\n", end="")
+        print(f"{c.bcolors.WARNING}Enter value betwen {c.bcolors.ENDC}1 - 10 {c.bcolors.WARNING}accordingly:{c.bcolors.ENDC}\n", end="")
         choice = input()
 
         # output account holdings 

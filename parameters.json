@@ -1,4 +1,4 @@
 {
-    "STOP_LOSS": "0.0",
-    "PRICE_THRESHOLD": "0.0"
+    "STOP_LOSS": "-4e-08",
+    "PRICE_THRESHOLD": "8e-08"
 }
