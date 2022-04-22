@@ -1,3 +1,40 @@
 {
+<<<<<<< HEAD
     
+=======
+    "error": [],
+    "result": {
+        "trades": {
+            "DEPOSIT-REQUEST[1]": {
+                "ordertxid": "OQCLML-BW3P3-BUCMWZ",
+                "postxid": "TKH2SE-M7IF5-CFI7LT",
+                "pair": "XETHZUSD",
+                "time": 1650190361.241772,
+                "type": "deposit",
+                "ordertype": "",
+                "price": "",
+                "cost": "1000.0",
+                "fee": "0.00000",
+                "vol": "0.0",
+                "margin": "0.00000",
+                "misc": ""
+            },
+            "DEPOSIT-REQUEST[2]": {
+                "ordertxid": "OQCLML-BW3P3-BUCMWZ",
+                "postxid": "TKH2SE-M7IF5-CFI7LT",
+                "pair": "XETHZUSD",
+                "time": 1649517960.280653,
+                "type": "deposit",
+                "ordertype": "",
+                "price": "",
+                "cost": "0.0",
+                "fee": "0.00000",
+                "vol": "0.0",
+                "margin": "0.00000",
+                "misc": ""
+            }
+        },
+        "count": 1
+    }
+>>>>>>> 92b04b37846e7e5cb705bc87a35f348e816355b6
 }
